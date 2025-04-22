@@ -6,7 +6,17 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-purple-100 min-h-screen p-8 font-sans">
+   <!-- Tombol Logout -->
+   <div class="flex justify-end mb-6">
+    <form action="/logout" method="POST">
+      @csrf
+      <button type="submit" class="bg-pink-500 text-white px-4 py-2 rounded-full hover:bg-pink-600 transition font-semibold shadow-md">
+        🚪 Logout
+      </button>
+    </form>
+  </div> 
 
+  <div class="max-w-6xl mx-auto">
   <div class="max-w-6xl mx-auto">
     <div class="text-center mb-10">
       <h1 class="text-4xl font-extrabold text-purple-700">🦸‍♂️ Daftar Superhero</h1>
